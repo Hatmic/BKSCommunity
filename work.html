@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">BKStudio</a>
+        <a href="index.html">首页</a>
+        <a href="#">发现</a>
+        <a href="#">论坛</a>
+        <a href="#">关于</a>
+        <a href="#">登录</a>
+    </nav>
+
+    <!-- 作品 -->
+    <div>
+        <h3>作品展示</h3>
+    </div>
+
+    <div class="iframe-wrapper">
+        <iframe id="work-iframe"></iframe>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageId = localStorage.getItem('selectedImageId');
+            const iframe = document.getElementById('work-iframe');
+            switch (imageId) {
+                case '1':
+                    iframe.src = 'https://nemo.codemao.cn/w/215778463';
+                    break;
+                case '2':
+                    iframe.src = 'https://nemo.codemao.cn/w/215518548';
+                    break;
+                default:
+                    console.log('未找到页面');
+                    break;
+            }
+        });
+
+        function adjustIframeHeight() {
+            var wrapper = document.querySelector('.iframe-wrapper');
+            var iframe = document.getElementById('work-iframe');
+            if (!wrapper || !iframe) return;
+
+            var height = wrapper.offsetWidth * 9 / 16;
+            
+            wrapper.style.height = height + 'px';
+
+            iframe.style.width = '100%';
+            iframe.style.height = height + 'px';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            adjustIframeHeight();
+        });
+        window.addEventListener('resize', adjustIframeHeight);
+    </script>
+</body>
+</html>

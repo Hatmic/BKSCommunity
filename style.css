@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystem, SF Pro text, PingFang SC, Helvetica, Helvetica Neue, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, sans-serif, "\5B8B\4F53";
+    background-color: #0e0e0e;
+    padding: 0 200px;
+    color: #ffffff;
+}
+
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+a {
+    color: #5f9aff;
+    text-decoration: none; 
+}
+
+nav {
+    margin: 0 -200px; 
+    background-color: #262626;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.item h4 {
+    text-align: left;
+    margin-top: 10px;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.item span {
+    font-size: 80%;
+    text-align: left;
+    color: #dedede;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    margin-right: 3px; 
+}
+
+.sign {
+    margin: 3px;
+    vertical-align: middle;
+    border-radius: 3px;
+    font-size: 10px !important;
+    color: #ffffff !important;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    /* max-width: 1280px; */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+}

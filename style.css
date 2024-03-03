@@ -97,6 +97,16 @@ nav a {
     overflow: hidden;
 }
 
-.iframe-wrapper iframe {
-    width: 100%;
+.community-262626 {
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+}
+
+.community-262626 p {
+    color: #d6d6d6 !important;
+}
+
+.community-262626 hr {
+    color: #d6d6d6 !important;
 }
